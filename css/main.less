@@ -55,33 +55,39 @@
 
 // Local tweaks block
 
- @green: #d4ff00;
+@red: #e31837; 
+@dred: #9a0100
+@lgrey: #eeeeee;
+@mgrey: #a5a5a5
+@dgrey: #666666
+@blue: #004a8d
+@white: #ffffff
 
 body {
-   background-color: #999;
- }
+   background-color: @white;
+ 
 
  h1, h2, h3, h5, h6 {
-   color: #333;
- }
+   color: @blue;
+ 
 
  .fieldset-wrapper,
  #content {
    background-color: #777;
- }
+ 
 
  .fieldset-wrapper,
  #content {
   border-color: #666;
- }
+ 
 
  #site-slogan {
-  border-bottom: 1px solid @green;
- }
+  border-bottom: 10px solid @lgrey;
+ 
 
  .c-btn {
-  border-color: @green;
- }
+  border-color: @white;
+ 
 
  a,
  #browse-menu button,
@@ -89,52 +95,52 @@ body {
  #top-bar nav button,
  #top-bar nav button:before,
  .form-item label {
-  color: @green;
- }
+  color: @white;
+ 
 
  .top-dropdown-container .top-dropdown-body {
-  background-color: #333333;
- }
+  background-color: #@dgrey;
+ 
 
 
 
 // Footer Block
 
-// footer {
-//   border-top: 1px solid #d4ff00;
-//   background-color: @grayLighter;
-//   background-image: url('../../arDominionPlugin/images/separator.png');
-//   background-repeat: no-repeat;
-//   background-position: center top;
-//   min-height: 95px;
-//   margin: 40px 0 0 0;
-//   padding: 20px 0;
-//
-//   ul {
-//     list-style: none;
-//     margin: 0;
-//   }
-//
-//   h5 {
-//     text-transform: uppercase;
-//     font-weight: normal;
-//   }
-//
-//   a {
-//     color: @grayLight;
-//     &:hover {
-//       color: @grayDark;
-//     }
-//   }
-//
-//   .row > div:hover h5 {
-//     color: @gray;
-//     text-shadow: 0px 0px 4px @grayLighter;
-//   }
-//
+footer {
+   border-top: 1px solid #d4ff00;
+   background-color: @grayLighter;
+   background-image: url('../../arDominionPlugin/images/separator.png');
+   background-repeat: no-repeat;
+   background-position: center top;
+   min-height: 95px;
+   margin: 40px 0 0 0;
+   padding: 20px 0;
+
+   ul {
+     list-style: none;
+     margin: 0;
+   
+
+   h5 {
+     text-transform: uppercase;
+     font-weight: normal;
+   
+
+   a {
+     color: @red;
+     &:hover {
+       color: @dred;
+     }
+   
+
+   .row > div:hover h5 {
+     color: @gray;
+     text-shadow: 0px 0px 4px @grayLighter;
+   
+
 //   // Powered by
 //   #atom-logo {
 //     margin-top: -4px;
 //     width: 140px;
 //   }
-// }
+ 
