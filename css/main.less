@@ -1,3 +1,4 @@
+	
 // OpenSans font
 
 @font-face {
@@ -56,87 +57,123 @@
 // Local tweaks block
 
 @red: #e31837; 
-@dred: #9a0100
+@dred: #9a0100;
 @lgrey: #eeeeee;
-@mgrey: #a5a5a5
-@dgrey: #666666
-@blue: #004a8d
-@white: #ffffff
+@mgrey: #a5a5a5;
+@dgrey: #666666;
+@blue: #004a8d;
+@white: #ffffff;
 
 body {
-   background-color: @white;
- 
+  background-color: @white;
+  }
+
+ #top-bar {
+  background-color: @white;
+  margin-right: 0px;
+  color: @blue;
+  }
 
  h1, h2, h3, h5, h6 {
    color: @blue;
- 
+   }
 
  .fieldset-wrapper,
- #content {
-   background-color: #777;
- 
-
- .fieldset-wrapper,
- #content {
-  border-color: #666;
- 
+   #content {
+   background-color: @white;
+   border-color: @white;
+   }
 
  #site-slogan {
-  border-bottom: 10px solid @lgrey;
- 
+  height:40px;
+  background-color: @red;
+  border-bottom: 20px solid @lgrey;
+  }
 
  .c-btn {
-  border-color: @white;
- 
+  border-color: @dgrey;
+  }
 
  a,
- #browse-menu button,
- #search-form-wrapper button:before,
- #top-bar nav button,
- #top-bar nav button:before,
- .form-item label {
-  color: @white;
- 
+ #search-bar #search-form-wrapper button,
+ #top-bar nav button {
+  color: @red
+  }
 
- .top-dropdown-container .top-dropdown-body {
-  background-color: #@dgrey;
- 
+ #user-menu button, 
+ #browse-menu button {
+  color: @white;
+  background-color: @red;
+  }
+
+ a:hover {
+  color: @dred;
+  text-decoration-line: underline;
+  text-decoration: underline
+  }
+
+ #top-bar nav button:before,
+ .top-dropdown-body,
+ .form-item label,
+ .top-dropdown-container,
+ .top-dropdown-body {
+  color: @red;
+  background-color: @white;
+  }
+
+ #search-bar #search-form-wrapper input,
+ #search-bar #search-form-wrapper button {
+  background-color: @lgrey;
+  color: @red;
+  }
+
+ #quick-links-menu.open,
+ #language-menu.open,
+ #admin-menu.open,
+ #import-menu.open,
+ #manage-menu.open,
+ #add-menu.open {
+  background-color: @blue
+  }
 
 
 
 // Footer Block
 
 footer {
-   border-top: 1px solid #d4ff00;
-   background-color: @grayLighter;
+   border-top: 1px solid @red;
+   background-color: @lgrey;
    background-image: url('../../arDominionPlugin/images/separator.png');
    background-repeat: no-repeat;
    background-position: center top;
    min-height: 95px;
    margin: 40px 0 0 0;
-   padding: 20px 0;
+   padding: 20px 0; 
+   
 
    ul {
      list-style: none;
      margin: 0;
-   
+   }   
 
    h5 {
      text-transform: uppercase;
      font-weight: normal;
-   
+   }  
 
    a {
-     color: @red;
-     &:hover {
-       color: @dred;
+     color: @red
      }
-   
+
+   a:hover {
+       color: @dred
+     }
+   }
 
    .row > div:hover h5 {
      color: @gray;
      text-shadow: 0px 0px 4px @grayLighter;
-   
+   }
 
 
 //   // Powered by
@@ -144,4 +181,3 @@ footer {
 //     margin-top: -4px;
 //     width: 140px;
 //   }
-}
